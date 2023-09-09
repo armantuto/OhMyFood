@@ -1,0 +1,118 @@
+// Animation loader
+.container-loader-style {
+
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 80vw;
+    width: 100%;
+    z-index: 3;
+    opacity: 1;
+    display: block;
+    animation: move 0.9s 0.9s ease forwards;
+    .title-loader {
+      margin: auto;
+      text-align: center;
+    }
+    .loader {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      margin: auto;
+      top: 30%;
+      &::before,
+      &::after {
+        content: "";
+        border-radius: 50%;
+        position: absolute;
+        inset: 0;
+        box-shadow: 0 0 10px 2px rgba(243, 241, 241, 0.3) inset;
+      }
+      &::after {
+        box-shadow: 0 3px 0 $primary-color inset;
+        animation: rotate 1s linear infinite;
+      }
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes move {
+    to {
+      z-index: -1;
+      opacity: 0;
+    }
+  }
+  
+ .loader P{
+    text-align: center;
+    justify-content: center;
+    padding-top: 40%;
+    font-size: xx-large;
+    color: $primary-color;
+    font-family: $font-titles;
+    
+} 
+
+
+//Animation Menu 
+
+@keyframes loadAnimation {
+  0% {
+      transform: translateY(-100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+
+
+//heart icon animation
+.text-card h3{
+  display: flex;
+ justify-content: space-between;
+      width: 100%;
+}
+
+
+.heart {
+ margin-right: 2%;
+ position: relative;
+ width: 30px;
+ height: 30px;
+
+ fill: transparent;
+ :hover,
+ :active {
+   cursor: pointer;
+   animation: opacity 0.4s ease-in forwards;
+   fill: url(#gradient01);
+   fill: url(#gradient02);
+   fill: url(#gradient03);
+   fill: url(#gradient04);
+   
+
+   stroke: #ffffff;
+ }
+
+ @keyframes opacity {
+   100% {
+     opacity: 1;
+   }
+   50% {
+     opacity: 0.5;
+   }
+   0% {
+     opacity: 0;
+   }
+
+ }}
