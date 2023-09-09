@@ -1,5 +1,5 @@
 # OhMyFood
-Front Ent project with html,css,sass.
+Front End project with html,css,sass.
 
 
 you can visit the preview site here
