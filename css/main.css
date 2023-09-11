@@ -280,7 +280,7 @@ footer ul i {
 .container-loader-style {
   position: absolute;
   background-color: rgb(255, 255, 255);
-  height: 90vw;
+  height: 80vw;
   width: 100%;
   z-index: 3;
   opacity: 1;
