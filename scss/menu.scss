@@ -165,7 +165,7 @@ section {
             i {
                 animation: rotate 360;
                 -webkit-animation: spin .4s;
-                animation: spin .4s;
+                animation: spin 0.4s;
                 transform:rotateZ(360deg);
                 transition: 1s;
                
